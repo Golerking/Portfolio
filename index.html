@@ -18,7 +18,7 @@
   <h2><button onclick="changeSec()">About Me</button></h2>
   <section id = "aboutMePar" style ="display: none">
   <p>I am part of the robotics and math team of my school. </p>
-    <img src="https://www.bthsrobotics.com/team/Ferdinand%20Afflerbach.webp" width="400" height="600">
+    <img id="altImg" src="https://www.bthsrobotics.com/team/Ferdinand%20Afflerbach.webp" width="400" height="600">
   </section>
   <div class="square"></div>
 
@@ -32,6 +32,16 @@
         section.style.display = "none";
       }
     }
+
+    const images = ["https://imgur.com/om9cob7", "https://www.bthsrobotics.com/team/Ferdinand%20Afflerbach.webp"];
+    let currentInd = 0;
+    
+    function changImg() {
+        currentInd = (currentInd + 1) % images.length;
+        document.getElementById("altImg").src = images[currentId];
+    }
+
+    setInterval(changeImg, 5000);
   </script>
 </body>
 </html>
