@@ -1,14 +1,20 @@
 <html>
 <head>
-<title>Portfolio</title>
+  <meta charset="UTF-8">
+  <title>HTML & JavaScript Basics</title>
 </head>
-
 <body>
-<h1>Portfolio</h1>
-  <h2>Robotics Team Member</h2>
-    <p>I am part of the FRC robotics team 334. There I work on the mechanical team responsible for manufacturing the mechanisms of the robot. I have learned how to use many machienes such as a drill press and a laser cutter.</p>
-  <h2>RMath Team Member</h2>
-    <p>I am also a part of the sophmore math team at my school. There we learn about many different areas of math including number and graph theory, probability, logarithms exponential functions, trigonometric functions and more. We also participate in constest such as the NYML, IML and AMC.</p>
+  <h1>Welcome to My Website</h1>
+  <p id="greeting">Hello, world!</p>
+  <!-- A button that triggers a JavaScript function -->
+  <button onclick="changeText()">Click Me!</button>
 
+  <script>
+    // This is JavaScript code.
+    // The function changes the text of the paragraph with id "greeting"
+    function changeText() {
+      document.getElementById("greeting").innerHTML = "Hello, JavaScript!";
+    }
+  </script>
 </body>
 </html>
