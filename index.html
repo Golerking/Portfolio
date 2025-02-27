@@ -37,7 +37,7 @@
     let currentId = 0;
     
     function changeImg() {
-        currentInd = (currentId + 1) % images.length;
+        currentId = (currentId + 1) % images.length;
         document.getElementById("altImg").src = images[currentId];
     }
 
