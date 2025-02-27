@@ -33,10 +33,10 @@
       }
     }
 
-    const images = ["https://imgur.com/om9cob7", "https://www.bthsrobotics.com/team/Ferdinand%20Afflerbach.webp"];
+    const images = ["https://imgur.com/om9cob7.jpg", "https://www.bthsrobotics.com/team/Ferdinand%20Afflerbach.webp"];
     let currentId = 0;
     
-    function changImg() {
+    function changeImg() {
         currentInd = (currentId + 1) % images.length;
         document.getElementById("altImg").src = images[currentId];
     }
